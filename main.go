@@ -130,7 +130,6 @@ func (s server) handlePOST(c *gin.Context) {
 			requestFields,
 			ts,
 		)
-		callPoint.AddField("value", 1)
 		s.WritePoint(callPoint)
 	}
 }
