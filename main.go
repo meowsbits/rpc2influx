@@ -68,6 +68,7 @@ func main() {
 	s := server{write}
 
 	r := gin.New()
+	r.Use(gin.Logger())
 
 	r.POST("/", s.handlePOST)
 
